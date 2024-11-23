@@ -25,6 +25,8 @@ import {
     getEpicEntitlements,
     H2_STEAM_ENTITLEMENTS,
     STEAM_NAMESPACE_2016,
+    STEAM_NAMESPACE_2021,
+    H3_EPIC_ENTITLEMENTS,
 } from "./platformEntitlements"
 import { GameVersion } from "./types/types"
 import { getRemoteService } from "./utils"
@@ -47,12 +49,8 @@ abstract class EntitlementStrategy {
  * @internal
  */
 export class EpicH3Strategy extends EntitlementStrategy {
-    override async get(accessToken: string, userId: string) {
-        return await getEpicEntitlements(
-            EPIC_NAMESPACE_2021,
-            userId,
-            accessToken,
-        )
+    override get() {
+        return H3_EPIC_ENTITLEMENTS
     }
 }
 
@@ -62,52 +60,39 @@ export class EpicH3Strategy extends EntitlementStrategy {
  * @internal
  */
 export class IOIStrategy extends EntitlementStrategy {
-    private readonly _remoteService: string
-
-    constructor(
-        gameVersion: GameVersion,
-        private readonly issuerId: string,
-    ) {
-        super()
-        this.issuerId = issuerId
-        this._remoteService = getRemoteService(gameVersion)!
-    }
-
-    override async get(userId: string) {
-        if (!userAuths.has(userId)) {
-            log(LogLevel.ERROR, `No user data found for ${userId}.`)
-            return []
-        }
-
-        const user = userAuths.get(userId)
-
-        let resp: AxiosResponse<string[]> | undefined = undefined
-
-        try {
-            resp = await user?._useService<string[]>(
-                `https://${this._remoteService}.hitman.io/authentication/api/userchannel/ProfileService/GetPlatformEntitlements`,
-                false,
-                {
-                    issuerId: this.issuerId,
-                },
-            )
-        } catch (error) {
-            if (error instanceof AxiosError) {
-                log(
-                    LogLevel.ERROR,
-                    `Failed to get entitlements from Steam: got ${error.response?.status} ${error.response?.statusText}.`,
-                )
-            } else {
-                log(
-                    LogLevel.ERROR,
-                    `Failed to get entitlements from Steam: ${JSON.stringify(
-                        error,
-                    )}.`,
-                )
-            }
-        }
-
-        return resp?.data || []
+    override get() {
+        return [
+            STEAM_NAMESPACE_2021,
+            "1829580",
+            "1829581",
+            "1829582",
+            "1829583",
+            "1829584",
+            "1829585",
+            "1829586",
+            "1829587",
+            "1829590",
+            "1829591",
+            "1829592",
+            "1829593",
+            "1829594",
+            "1829595",
+            "1829596",
+            "1829600",
+            "1829601",
+            "1829602",
+            "1829603",
+            "1829604",
+            "1829605",
+            "1843460",
+            "2184790",
+            "2184791",
+            "2475260",
+            "2828470",
+            "2973650",
+            "3110360",
+            "3254350",
+        ]
     }
 }
 

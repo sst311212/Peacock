@@ -23,6 +23,8 @@ import { getUserData } from "./databaseHandler"
 import { log, LogLevel } from "./loggingInterop"
 
 export const H3_EPIC_ENTITLEMENTS = [
+    // H3
+    "ed55aa5edc5941de92fd7f64de415793",
     // DUBAI:
     "06d4d61bbb774ca99c1661bee04fbde0",
     // DARTMOOR:
@@ -139,6 +141,7 @@ export const STEAM_NAMESPACE_SCPC = "783781"
 export const STEAM_NAMESPACE_2018 = "863550"
 export const EPIC_NAMESPACE_2021 = "ed55aa5edc5941de92fd7f64de415793"
 export const STEAM_NAMESPACE_2021 = "1659040"
+export const STEAM_NAMESPACE_2021_DEMO = "1847520"
 
 export const SCPC_ENTITLEMENTS = [STEAM_NAMESPACE_2016, "783781"]
 
