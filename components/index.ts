@@ -59,6 +59,7 @@ import {
     STEAM_NAMESPACE_2016,
     STEAM_NAMESPACE_2018,
     STEAM_NAMESPACE_2021,
+    STEAM_NAMESPACE_2021_DEMO,
     STEAM_NAMESPACE_SCPC,
 } from "./platformEntitlements"
 import { legacyProfileRouter } from "./2016/legacyProfileRouter"
@@ -231,6 +232,7 @@ app.get(
 
         switch (req.query.issuer) {
             case STEAM_NAMESPACE_2021:
+            case STEAM_NAMESPACE_2021_DEMO:
                 config.Versions[0].SERVER_VER.GlobalAuthentication.RequestedAudience =
                     "steam-prod_8"
                 break
@@ -365,6 +367,7 @@ app.use(
                     break
                 case "fghi4567xQOCheZIin0pazB47qGUvZw4":
                 case STEAM_NAMESPACE_2021:
+                case STEAM_NAMESPACE_2021_DEMO:
                     req.serverVersion = "8-24"
                     break
                 default:
