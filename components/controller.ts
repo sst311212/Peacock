@@ -1219,6 +1219,9 @@ export class Controller {
             return undefined
         }
 
+        log(LogLevel.INFO, `Skip look-up contract's id from official servers.`)
+        return undefined
+
         const resp = await user._useService<{
             data?: { Contract?: MissionManifest }
         }>(

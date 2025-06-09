@@ -83,6 +83,9 @@ export async function officialSearchContract(
         return undefined
     }
 
+    log(LogLevel.INFO, "Skip search contracts from official servers.")
+    return undefined
+
     const resp = await user._useService<{
         data: ContractSearchResult
     }>(
