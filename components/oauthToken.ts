@@ -24,6 +24,7 @@ import { log, LogLevel } from "./loggingInterop"
 import {
     STEAM_NAMESPACE_2018,
     STEAM_NAMESPACE_2021,
+    STEAM_NAMESPACE_2021_DEMO,
 } from "./platformEntitlements"
 import {
     getExternalUserData,
@@ -165,7 +166,8 @@ export async function handleOAuthToken(
 
     const isHitman3 =
         external_appid === "fghi4567xQOCheZIin0pazB47qGUvZw4" ||
-        external_appid === STEAM_NAMESPACE_2021
+        external_appid === STEAM_NAMESPACE_2021 ||
+        external_appid === STEAM_NAMESPACE_2021_DEMO
 
     let gameVersion: GameVersion = "h1"
 
