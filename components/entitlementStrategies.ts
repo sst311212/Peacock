@@ -25,6 +25,7 @@ import {
     getEpicEntitlements,
     H2_STEAM_ENTITLEMENTS,
     STEAM_NAMESPACE_2016,
+    H3_STEAM_ENTITLEMENTS,
 } from "./platformEntitlements"
 import { GameVersion } from "./types/types"
 import {
@@ -303,6 +304,8 @@ export class SteamStrategy extends EntitlementStrategy {
         identity: string,
         steamId: string,
     ): Promise<string[]> {
+        return H3_STEAM_ENTITLEMENTS
+
         if (!this.isValid) return []
 
         const ticket = parseAppTicket(Buffer.from(clientToken, "hex"))
@@ -364,6 +367,8 @@ export class IOIStrategy extends EntitlementStrategy {
     }
 
     override async get(userId: string) {
+        return H3_STEAM_ENTITLEMENTS
+
         if (!userAuths.has(userId)) {
             log(LogLevel.ERROR, `No user data found for ${userId}.`)
             return []
