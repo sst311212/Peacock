@@ -23,6 +23,8 @@ import { getUserData } from "./databaseHandler"
 import { log, LogLevel } from "./loggingInterop"
 
 export const H3_EPIC_ENTITLEMENTS = [
+    // H3
+    "ed55aa5edc5941de92fd7f64de415793",
     // DUBAI:
     "06d4d61bbb774ca99c1661bee04fbde0",
     // DARTMOOR:
@@ -145,6 +147,45 @@ export const H2_STEAM_ENTITLEMENTS = [
     "977941", // Hitman 2 - Early Access
 ]
 
+export const H3_STEAM_ENTITLEMENTS = [
+    "1659040", // HITMAN World of Assassination
+    "1829580", // HITMAN 3 - Seven Deadly Sins Act 1: Greed
+    "1829581", // HITMAN 3 - Seven Deadly Sins Act 2: Pride
+    "1829582", // HITMAN 3 - Seven Deadly Sins Act 3: Sloth
+    "1829583", // HITMAN 3 - Seven Deadly Sins Act 4: Lust
+    "1829584", // HITMAN 3 - Seven Deadly Sins Act 5: Gluttony
+    "1829585", // HITMAN 3 - Seven Deadly Sins Act 6: Envy
+    "1829586", // HITMAN 3 - Seven Deadly Sins Act 7: Wrath
+    "1829587", // HITMAN 3 - Seven Deadly Sins Collection
+    "1829590", // HITMAN 3 Access Pass: HITMAN 2 Expansion
+    "1829591", // HITMAN 3 - Deluxe Pack
+    "1829592", // HITMAN 3 Access Pass: HITMAN 2 Standard
+    "1829593", // HITMAN 3 Access Pass: HITMAN 1 Complete First Season
+    "1829594", // HITMAN 3 - VR Access
+    "1829595", // HITMAN 3 Access Pass: HITMAN 1 GOTY Upgrade
+    "1829596", // HITMAN 3 - Trinity Pack
+    "1829600", // HITMAN 3 - Carpathian Mountains
+    "1829601", // HITMAN 3 - Mendoza
+    "1829602", // HITMAN 3 - Chongqing
+    "1829603", // HITMAN 3 - Berlin
+    "1829604", // HITMAN 3 - Dartmoor
+    "1829605", // HITMAN 3 - Dubai
+    "1843460", // HITMAN 3 Access Pass: HITMAN 1 GOTY Edition
+    "2184790", // HITMAN 3 - Street Art Pack
+    "2184791", // HITMAN 3 - Makeshift Pack
+    "2475260", // HITMAN 3 - Sarajevo Six Campaign Pack
+    "2828470", // HITMAN 3 - The Undying Pack
+    "2973650", // HITMAN 3 - The Disruptor Pack
+    "3110360", // HITMAN 3 - The Drop Pack
+    "3254350", // HITMAN 3 - The Splitter Pack
+    "3711140", // HITMAN 3 - The Banker Pack
+    "3957470", // HITMAN 3 - The Bruce Lee Pack
+    "4097630", // HITMAN 3 - The Eminem vs. Slim Shady Pack
+    "4328240", // HITMAN 3 - Patient Zero Requiem Pack
+    "4542910", // HITMAN WOA - World Champions Pack
+    "4621250", // HITMAN WOA - The Wizard Pack
+]
+
 export const STEAM_NAMESPACE_2016 = "236870"
 export const EPIC_NAMESPACE_2016 = "3c06b15a8a2845c0b725d4f952fe00aa"
 export const STEAM_NAMESPACE_SCPC = "783781"
@@ -216,6 +257,8 @@ export async function getEpicEntitlements(
 
         return result
     }
+
+    return H3_EPIC_ENTITLEMENTS
 
     const actuallyOwned = new Set<string>()
     const res = await getEnts(H3_EPIC_ENTITLEMENTS)
