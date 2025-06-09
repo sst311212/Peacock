@@ -25,6 +25,7 @@ import {
     getEpicEntitlements,
     H2_STEAM_ENTITLEMENTS,
     STEAM_NAMESPACE_2016,
+    H3_STEAM_ENTITLEMENTS,
 } from "./platformEntitlements"
 import { GameVersion } from "./types/types"
 import { getRemoteService } from "./utils"
@@ -62,52 +63,8 @@ export class EpicH3Strategy extends EntitlementStrategy {
  * @internal
  */
 export class IOIStrategy extends EntitlementStrategy {
-    private readonly _remoteService: string
-
-    constructor(
-        gameVersion: GameVersion,
-        private readonly issuerId: string,
-    ) {
-        super()
-        this.issuerId = issuerId
-        this._remoteService = getRemoteService(gameVersion)!
-    }
-
-    override async get(userId: string) {
-        if (!userAuths.has(userId)) {
-            log(LogLevel.ERROR, `No user data found for ${userId}.`)
-            return []
-        }
-
-        const user = userAuths.get(userId)
-
-        let resp: AxiosResponse<string[]> | undefined = undefined
-
-        try {
-            resp = await user?._useService<string[]>(
-                `https://${this._remoteService}.hitman.io/authentication/api/userchannel/ProfileService/GetPlatformEntitlements`,
-                false,
-                {
-                    issuerId: this.issuerId,
-                },
-            )
-        } catch (error) {
-            if (error instanceof AxiosError) {
-                log(
-                    LogLevel.ERROR,
-                    `Failed to get entitlements from Steam: got ${error.response?.status} ${error.response?.statusText}.`,
-                )
-            } else {
-                log(
-                    LogLevel.ERROR,
-                    `Failed to get entitlements from Steam: ${JSON.stringify(
-                        error,
-                    )}.`,
-                )
-            }
-        }
-
-        return resp?.data || []
+    override get() {
+        return H3_STEAM_ENTITLEMENTS
     }
 }
 
