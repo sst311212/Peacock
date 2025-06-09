@@ -292,6 +292,9 @@ export class HitsCategoryService {
             return undefined
         }
 
+        log(LogLevel.INFO, `Skip fetch ${categoryName} from official servers.`)
+        return undefined
+
         const resp = await user._useService<{
             data: HitsCategoryCategory
         }>(
