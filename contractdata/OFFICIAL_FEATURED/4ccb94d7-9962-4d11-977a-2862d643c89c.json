@@ -1,0 +1,279 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "52704490-590b-46d2-845c-7e42ec2bccaa",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 671746f4-eecd-417d-b0cd-1ad49e88f0c2).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 671746f4-eecd-417d-b0cd-1ad49e88f0c2).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "671746f4-eecd-417d-b0cd-1ad49e88f0c2"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "671746f4-eecd-417d-b0cd-1ad49e88f0c2"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "hitmansuit",
+                        "RepositoryId": "4fc9396e-2619-4e66-a51e-2bd366230da7",
+                        "HardCondition": false,
+                        "ObjectiveId": "5cdf4310-491e-4981-ad5d-09d3ae4aa8b5",
+                        "KillMethod": ""
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "5cdf4310-491e-4981-ad5d-09d3ae4aa8b5",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "671746f4-eecd-417d-b0cd-1ad49e88f0c2"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "671746f4-eecd-417d-b0cd-1ad49e88f0c2"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.OutfitIsHitmanSuit",
+                                                    true
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "671746f4-eecd-417d-b0cd-1ad49e88f0c2"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "99bd27d0-b2cd-4759-a21d-16c56481c945",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 79d13740-8f54-4486-a486-feceb1342f51).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 79d13740-8f54-4486-a486-feceb1342f51).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "79d13740-8f54-4486-a486-feceb1342f51"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "79d13740-8f54-4486-a486-feceb1342f51"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "5c158e08-2800-4031-b1dc-1a8e897d8a65",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository f6b5c891-c4eb-429c-8e75-cfd1d37fa858).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository f6b5c891-c4eb-429c-8e75-cfd1d37fa858).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "f6b5c891-c4eb-429c-8e75-cfd1d37fa858"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "f6b5c891-c4eb-429c-8e75-cfd1d37fa858"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "430fc656-f48e-47d2-ad40-b3b4811524f1",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository bebde4ed-9ec3-44cc-8b7d-5182e41947d1).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository bebde4ed-9ec3-44cc-8b7d-5182e41947d1).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "bebde4ed-9ec3-44cc-8b7d-5182e41947d1"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "bebde4ed-9ec3-44cc-8b7d-5182e41947d1"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "On Her Agency&apos;s Secret Service",
+        "Description": "0047 enters the party in a tailored suit and quietly charms the women assassins - the Angels of Death. He draws them aside one by one, eliminating them without disrupting the celebration. Moments later, he exits - leaving the party intact and no one aware.\rThe secret service assignment from Diana&apos;s Contract Agency was successful.\r\rThis contract was created by a member of the HITMAN community known as Zubin47.",
+        "ScenePath": "assembly:/_pro/scenes/missions/colombia/scene_hippo.entity",
+        "Location": "LOCATION_COLOMBIA",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 23,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 23,
+            "Build": 0,
+            "Revision": 88
+        },
+        "Type": "featured",
+        "Id": "4ccb94d7-9962-4d11-977a-2862d643c89c",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y26W23_06.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "52704490-590b-46d2-845c-7e42ec2bccaa"
+            },
+            {
+                "Id": "5cdf4310-491e-4981-ad5d-09d3ae4aa8b5"
+            },
+            {
+                "Id": "99bd27d0-b2cd-4759-a21d-16c56481c945"
+            },
+            {
+                "Id": "5c158e08-2800-4031-b1dc-1a8e897d8a65"
+            },
+            {
+                "Id": "430fc656-f48e-47d2-ad40-b3b4811524f1"
+            }
+        ],
+        "CreationTimestamp": "2026-06-05T23:43:01.7522002Z",
+        "Entitlements": [
+            "LOCATION_COLOMBIA"
+        ],
+        "CodeName_Hint": "FC Y26W23 On Her Agency&apos;s Secret Service, created by Zubin47",
+        "PublicId": "012048745847"
+    },
+    "UserData": {}
+}

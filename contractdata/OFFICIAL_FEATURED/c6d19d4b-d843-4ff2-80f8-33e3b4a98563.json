@@ -1,0 +1,223 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "063294ab-3c61-460b-8337-b2c55bf14727",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository ccae1d32-2d6e-41aa-9765-1b4303e05f22).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository ccae1d32-2d6e-41aa-9765-1b4303e05f22).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "ccae1d32-2d6e-41aa-9765-1b4303e05f22"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "ccae1d32-2d6e-41aa-9765-1b4303e05f22"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "50c8db37-0c78-4213-b10c-7f0ab097c06a",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 00c72d2d-f978-477a-875b-11822344d12c).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 00c72d2d-f978-477a-875b-11822344d12c).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "00c72d2d-f978-477a-875b-11822344d12c"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "00c72d2d-f978-477a-875b-11822344d12c"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "4e02316f-7f04-44b2-af1c-d86fd75e8359",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository ccf5ae15-0c4e-4ff7-a6b1-352617989a28).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository ccf5ae15-0c4e-4ff7-a6b1-352617989a28).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "ccf5ae15-0c4e-4ff7-a6b1-352617989a28"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "ccf5ae15-0c4e-4ff7-a6b1-352617989a28"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "2b38f79b-d029-4aa6-94ef-9f82379d17fd",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 893be54e-d882-4eda-b2d0-b20417ae6978).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 893be54e-d882-4eda-b2d0-b20417ae6978).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "893be54e-d882-4eda-b2d0-b20417ae6978"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "893be54e-d882-4eda-b2d0-b20417ae6978"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [
+            "1f8f0b8b-1f65-4d6c-a2f4-fc8adffa394a"
+        ],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "YOU SNOOZE, YOU LOSE",
+        "Description": "Welcome agent, Thomas Cross&apos; patience is growing thin, he feels like Jordan is too lax with his crew, many of them are sleeping on the job. That&apos;s unacceptable, lazy people must be eliminated so the Birthday Boy can finally get some work done. This contract was created by members of the HITMAN community known as josthin and Fe2O3 T.\r\rThis contract was created by a member of the HITMAN community known as josthin and Fe2O3 T.",
+        "ScenePath": "assembly:/_PRO/Scenes/Missions/Bangkok/_scene_tiger.entity",
+        "Location": "LOCATION_BANGKOK",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 18,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 18,
+            "Build": 0,
+            "Revision": 68
+        },
+        "Type": "featured",
+        "Id": "c6d19d4b-d843-4ff2-80f8-33e3b4a98563",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y25W20_10.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "063294ab-3c61-460b-8337-b2c55bf14727"
+            },
+            {
+                "Id": "50c8db37-0c78-4213-b10c-7f0ab097c06a"
+            },
+            {
+                "Id": "4e02316f-7f04-44b2-af1c-d86fd75e8359"
+            },
+            {
+                "Id": "2b38f79b-d029-4aa6-94ef-9f82379d17fd"
+            }
+        ],
+        "CreationTimestamp": "2025-01-29T00:15:48.891526Z",
+        "CodeName_Hint": "FC Y25W19 YOU SNOOZE, YOU LOSE, created by josthin and Fe2O3 T",
+        "Entitlements": [
+            "LOCATION_BANGKOK"
+        ],
+        "LastUpdate": "2026-06-05T23:43:08.0441562Z",
+        "PublicId": "008244192347"
+    },
+    "UserData": {}
+}

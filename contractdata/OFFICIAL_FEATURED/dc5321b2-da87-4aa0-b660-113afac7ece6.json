@@ -1,0 +1,221 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "bc045d29-b76a-4403-a303-21e23a814dc5",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 626e8412-45cb-4711-bce0-8d2b215cd1d8).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 626e8412-45cb-4711-bce0-8d2b215cd1d8).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "626e8412-45cb-4711-bce0-8d2b215cd1d8"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "626e8412-45cb-4711-bce0-8d2b215cd1d8"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "96e3fde9-42fe-4516-93e2-5a09a8d86ecb",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository b77849fb-5e15-4e18-ab07-3c3354af7939).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository b77849fb-5e15-4e18-ab07-3c3354af7939).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "b77849fb-5e15-4e18-ab07-3c3354af7939"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "b77849fb-5e15-4e18-ab07-3c3354af7939"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "232394d4-2230-438a-8506-9b49d668d09c",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 9910e480-fbc3-45b0-b6f8-8c5c16b56d19).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 9910e480-fbc3-45b0-b6f8-8c5c16b56d19).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "9910e480-fbc3-45b0-b6f8-8c5c16b56d19"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "9910e480-fbc3-45b0-b6f8-8c5c16b56d19"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "8e85a4af-7165-4aba-b7ca-4ee56cd952e3",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 527e339a-6320-4f7f-899c-22ed8da07de9).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 527e339a-6320-4f7f-899c-22ed8da07de9).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "527e339a-6320-4f7f-899c-22ed8da07de9"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "527e339a-6320-4f7f-899c-22ed8da07de9"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "Feed the kitty",
+        "Description": "The kitty is hungry. Bring him 3 of the tastiest mermaids and the best cook. Make the kitty fed and satisfied.\r\rThis contract was created by a member of the HITMAN community known as Fenixsandr.",
+        "ScenePath": "assembly:/_pro/scenes/missions/Rocky/scene_dugong.entity",
+        "Location": "LOCATION_ROCKY_DUGONG",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 18,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 18,
+            "Build": 0,
+            "Revision": 68
+        },
+        "Type": "featured",
+        "Id": "dc5321b2-da87-4aa0-b660-113afac7ece6",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y25W30_02.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "bc045d29-b76a-4403-a303-21e23a814dc5"
+            },
+            {
+                "Id": "96e3fde9-42fe-4516-93e2-5a09a8d86ecb"
+            },
+            {
+                "Id": "232394d4-2230-438a-8506-9b49d668d09c"
+            },
+            {
+                "Id": "8e85a4af-7165-4aba-b7ca-4ee56cd952e3"
+            }
+        ],
+        "CreationTimestamp": "2025-02-25T12:40:51.967543Z",
+        "CodeName_Hint": "FC Y25W28 Feed the kitty, created by Fenixsandr",
+        "Entitlements": [
+            "LOCATION_ROCKY"
+        ],
+        "LastUpdate": "2026-06-05T23:42:57.9628644Z",
+        "PublicId": "034392970847"
+    },
+    "UserData": {}
+}

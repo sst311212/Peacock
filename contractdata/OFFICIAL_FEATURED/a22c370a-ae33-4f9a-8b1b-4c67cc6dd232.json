@@ -1,0 +1,131 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "2730c4e8-e37b-449c-8f10-ad63c0490e1a",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 5e91164d-3c37-4529-a70a-1a10b97e7338).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 5e91164d-3c37-4529-a70a-1a10b97e7338).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "5e91164d-3c37-4529-a70a-1a10b97e7338"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "5e91164d-3c37-4529-a70a-1a10b97e7338"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "a7fbccb9-2895-4c71-987a-4b4307ae2ad6",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 12bc718a-3127-46de-b792-f39e0a7090b0).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 12bc718a-3127-46de-b792-f39e0a7090b0).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "12bc718a-3127-46de-b792-f39e0a7090b0"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "12bc718a-3127-46de-b792-f39e0a7090b0"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "The Dog",
+        "Description": "47, in Chinese culture, the Dog is revered for its loyalty, its vigilance, and its instinct to protect those it serves without question. People associated with this sign are often described as reliable, honest, and unwavering to a fault.\r\rVincent Knowles and Mogwai embody these traits perfectly. As executive protection agents for Hush and Imogen Royce, they are trusted companions, constant, watchful, and prepared to sacrifice themselves if necessary. Our client finds their devotion admirable,\r\rThis contract was created by a member of the HITMAN community known as quadglut.\r\rFC72",
+        "ScenePath": "assembly:/_pro/scenes/missions/wet/scene_rat_basic.entity",
+        "Location": "LOCATION_WET_RAT",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 22,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 22,
+            "Build": 0,
+            "Revision": 83
+        },
+        "Type": "featured",
+        "Id": "a22c370a-ae33-4f9a-8b1b-4c67cc6dd232",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y26W07_011_TheDog.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "2730c4e8-e37b-449c-8f10-ad63c0490e1a"
+            },
+            {
+                "Id": "a7fbccb9-2895-4c71-987a-4b4307ae2ad6"
+            }
+        ],
+        "CreationTimestamp": "2026-01-24T08:21:55.8490037Z",
+        "Entitlements": [
+            "LOCATION_WET"
+        ],
+        "CodeName_Hint": "FC Y26W07 47 Let the Dogs Out, created by quadglut",
+        "LastUpdate": "2026-06-05T23:43:04.7652764Z",
+        "PublicId": "030344701847"
+    },
+    "UserData": {}
+}

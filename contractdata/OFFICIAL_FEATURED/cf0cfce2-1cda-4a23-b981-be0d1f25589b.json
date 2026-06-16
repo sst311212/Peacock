@@ -1,0 +1,362 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "2a154bc3-5e73-489c-bf3f-724a7f80be8e",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 6becc152-a370-4db3-a8fb-7b377fdd5c16).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 6becc152-a370-4db3-a8fb-7b377fdd5c16).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "6becc152-a370-4db3-a8fb-7b377fdd5c16"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "6becc152-a370-4db3-a8fb-7b377fdd5c16"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "disguise",
+                        "RepositoryId": "bbdfca80-abef-4b43-953e-9a46c3eee2eb",
+                        "HardCondition": false,
+                        "ObjectiveId": "956a8784-d000-41f8-808a-09ac886af3d8",
+                        "KillMethod": ""
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "956a8784-d000-41f8-808a-09ac886af3d8",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "6becc152-a370-4db3-a8fb-7b377fdd5c16"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "6becc152-a370-4db3-a8fb-7b377fdd5c16"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.OutfitRepositoryId",
+                                                    "bbdfca80-abef-4b43-953e-9a46c3eee2eb"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "6becc152-a370-4db3-a8fb-7b377fdd5c16"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "d3401eeb-60ec-4829-8f16-9d522cb271e9",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository da039be6-6226-4fa0-9dff-00ae50648a30).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository da039be6-6226-4fa0-9dff-00ae50648a30).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "da039be6-6226-4fa0-9dff-00ae50648a30"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "da039be6-6226-4fa0-9dff-00ae50648a30"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "d725c700-c870-4f17-a0b2-2602c2034cd3",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository db85e020-98d2-485e-ba21-ebfc53b91daa).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository db85e020-98d2-485e-ba21-ebfc53b91daa).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "db85e020-98d2-485e-ba21-ebfc53b91daa"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "db85e020-98d2-485e-ba21-ebfc53b91daa"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "1622a0f9-f756-49b9-9ac4-6cd212200161",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 91362686-6af8-4690-bdef-eb362dc757da).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 91362686-6af8-4690-bdef-eb362dc757da).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "91362686-6af8-4690-bdef-eb362dc757da"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "91362686-6af8-4690-bdef-eb362dc757da"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "2caa1482-5d75-46fc-aec5-dba2c61ff2c7",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 0f54b455-61c7-44de-a2cb-582accb943b3).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 0f54b455-61c7-44de-a2cb-582accb943b3).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "0f54b455-61c7-44de-a2cb-582accb943b3"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "0f54b455-61c7-44de-a2cb-582accb943b3"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "_comment": "----- Do Not Eliminate Diana Burnwood -----",
+                "Id": "261ec7b9-6c3b-4fc2-af0b-af894b8e04db",
+                "Category": "primary",
+                "isHidden": "true",
+                "ObjectiveType": "custom",
+                "ForceShowOnLoadingScreen": false,
+                "ExcludeFromScoring": true,
+                "Image": "images/actors/Llama_Diana_Burnwood.jpg",
+                "BriefingName": "$loc UI_CONTRACT_LLAMA_DIANA_NAME",
+                "BriefingText": "$loc UI_CONTRACT_LLAMA_DIANA_NAME",
+                "Type": "statemachine",
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                            "Kill": {
+                                "Condition": {
+                                    "$eq": [
+                                        "$Value.RepositoryId",
+                                        "0e2111f1-d5ab-4a06-90ce-703abd6d3f91"
+                                    ]
+                                },
+                                "Transition": "Failure"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "WHAT MEN ARE UP TO ON VALENTINE&apos;S DAY",
+        "Description": "What are men up to on Valentine&apos;s Day? Some are down in the dumps from a breakup; some are sweet-talking their girlfriends; some are toiling away at work; and others are lost in thought \u2014 wondering where on earth their girlfriends actually are.\r\rThis contract was created by a member of the HITMAN community known as SmileLXiao.",
+        "ScenePath": "assembly:/_pro/scenes/missions/elegant/scene_llama.entity",
+        "Location": "LOCATION_ELEGANT_LLAMA",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 22,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 22,
+            "Build": 0,
+            "Revision": 84
+        },
+        "Type": "featured",
+        "Id": "cf0cfce2-1cda-4a23-b981-be0d1f25589b",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y26W09_008.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "2a154bc3-5e73-489c-bf3f-724a7f80be8e"
+            },
+            {
+                "Id": "956a8784-d000-41f8-808a-09ac886af3d8"
+            },
+            {
+                "Id": "d3401eeb-60ec-4829-8f16-9d522cb271e9"
+            },
+            {
+                "Id": "d725c700-c870-4f17-a0b2-2602c2034cd3"
+            },
+            {
+                "Id": "1622a0f9-f756-49b9-9ac4-6cd212200161"
+            },
+            {
+                "Id": "2caa1482-5d75-46fc-aec5-dba2c61ff2c7"
+            },
+            {
+                "Id": "261ec7b9-6c3b-4fc2-af0b-af894b8e04db"
+            }
+        ],
+        "CreationTimestamp": "2026-02-17T09:40:08.2772351Z",
+        "Entitlements": [
+            "LOCATION_ELEGANT"
+        ],
+        "CodeName_Hint": "FC Y26W09 WHAT MEN ARE UP TO ON VALENTINE&apos;S DAY, created by SmileLXiao",
+        "LastUpdate": "2026-06-05T23:43:07.6510267Z",
+        "PublicId": "031676545547"
+    },
+    "UserData": {}
+}

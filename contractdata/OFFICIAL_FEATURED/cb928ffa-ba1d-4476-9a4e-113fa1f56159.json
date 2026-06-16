@@ -1,0 +1,176 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "213ed70e-6a3b-4b50-bb0c-cc703ec1d87e",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 0e533277-1b15-473a-aa1a-3a6a29918fa6).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 0e533277-1b15-473a-aa1a-3a6a29918fa6).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "0e533277-1b15-473a-aa1a-3a6a29918fa6"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "0e533277-1b15-473a-aa1a-3a6a29918fa6"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "363676ca-c61a-4162-ac63-188db7fa44b5",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository f61656ed-c51a-448b-a772-aad7dbe7f36f).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository f61656ed-c51a-448b-a772-aad7dbe7f36f).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "f61656ed-c51a-448b-a772-aad7dbe7f36f"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "f61656ed-c51a-448b-a772-aad7dbe7f36f"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "9edb1c99-3853-4a6d-afe2-191f5b819301",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository aa7a67df-8112-4578-b70a-322270626529).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository aa7a67df-8112-4578-b70a-322270626529).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "aa7a67df-8112-4578-b70a-322270626529"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "aa7a67df-8112-4578-b70a-322270626529"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "Computer Wizard&#39;s Spell Check",
+        "Description": "There have been reports coming from Chongqing of malfunctioning PCs.\rTo fix the problems, the Computer Wizard has been using his hex editor to develop a brand new spell.\rHe needs you to run a beta test to ensure there are no bugs.\rThis updated software sorcery can solve the #1 issue in tech support tickets: human error.\rEnd these users.\r\rTHANK YOU TO V1DEOST FOR THE MAGICAL LOGO ART!\r\rThis contract was created by a member of the HITMAN community known as magicdave94.",
+        "ScenePath": "assembly:/_pro/scenes/missions/wet/scene_rat_basic.entity",
+        "Location": "LOCATION_WET_RAT",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 18,
+            "Build": 0,
+            "Revision": 68
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 18,
+            "Build": 0,
+            "Revision": 68
+        },
+        "Type": "featured",
+        "Id": "cb928ffa-ba1d-4476-9a4e-113fa1f56159",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y25W35_10.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "213ed70e-6a3b-4b50-bb0c-cc703ec1d87e"
+            },
+            {
+                "Id": "363676ca-c61a-4162-ac63-188db7fa44b5"
+            },
+            {
+                "Id": "9edb1c99-3853-4a6d-afe2-191f5b819301"
+            }
+        ],
+        "CreationTimestamp": "2025-03-24T08:38:35.1794076Z",
+        "Entitlements": [
+            "LOCATION_WET"
+        ],
+        "CodeName_Hint": "FC Y25W34 Computer Wizard&#39;s Spell Check, created by magicdave94",
+        "LastUpdate": "2026-06-05T23:42:56.2163306Z",
+        "PublicId": "030302494447"
+    },
+    "UserData": {}
+}

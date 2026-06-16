@@ -1,0 +1,563 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "c926299d-8d1d-4e04-860a-727c32be8a92",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 881fde89-e112-4e1d-a05b-7fbf2fab2213).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 881fde89-e112-4e1d-a05b-7fbf2fab2213).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "881fde89-e112-4e1d-a05b-7fbf2fab2213"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "881fde89-e112-4e1d-a05b-7fbf2fab2213"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "disguise",
+                        "RepositoryId": "642c20f9-bf41-41b4-b0bb-2491b5be938a",
+                        "HardCondition": false,
+                        "ObjectiveId": "0f705c97-55d4-4248-a297-5d72efae94da",
+                        "KillMethod": ""
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "0f705c97-55d4-4248-a297-5d72efae94da",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "881fde89-e112-4e1d-a05b-7fbf2fab2213"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "881fde89-e112-4e1d-a05b-7fbf2fab2213"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.OutfitRepositoryId",
+                                                    "642c20f9-bf41-41b4-b0bb-2491b5be938a"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "881fde89-e112-4e1d-a05b-7fbf2fab2213"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "705bd4d4-2399-42e8-8db1-16143e9f9085",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository d0750d1b-2684-4b48-830c-da325b76d425).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository d0750d1b-2684-4b48-830c-da325b76d425).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "d0750d1b-2684-4b48-830c-da325b76d425"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "d0750d1b-2684-4b48-830c-da325b76d425"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "disguise",
+                        "RepositoryId": "642c20f9-bf41-41b4-b0bb-2491b5be938a",
+                        "HardCondition": false,
+                        "ObjectiveId": "b644ed04-7f6e-404a-aa3d-25692c4f5c0d",
+                        "KillMethod": ""
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "b644ed04-7f6e-404a-aa3d-25692c4f5c0d",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "d0750d1b-2684-4b48-830c-da325b76d425"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "d0750d1b-2684-4b48-830c-da325b76d425"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.OutfitRepositoryId",
+                                                    "642c20f9-bf41-41b4-b0bb-2491b5be938a"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "d0750d1b-2684-4b48-830c-da325b76d425"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "b7676d72-46eb-4752-82f3-c3a137654130",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 118b962d-963f-4ecc-8916-eda81c9e5ec5).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 118b962d-963f-4ecc-8916-eda81c9e5ec5).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "118b962d-963f-4ecc-8916-eda81c9e5ec5"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "118b962d-963f-4ecc-8916-eda81c9e5ec5"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "disguise",
+                        "RepositoryId": "642c20f9-bf41-41b4-b0bb-2491b5be938a",
+                        "HardCondition": false,
+                        "ObjectiveId": "295353d7-ec92-4e87-a77f-30950a4fc74f",
+                        "KillMethod": ""
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "295353d7-ec92-4e87-a77f-30950a4fc74f",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "118b962d-963f-4ecc-8916-eda81c9e5ec5"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "118b962d-963f-4ecc-8916-eda81c9e5ec5"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.OutfitRepositoryId",
+                                                    "642c20f9-bf41-41b4-b0bb-2491b5be938a"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "118b962d-963f-4ecc-8916-eda81c9e5ec5"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "0f3c011e-bf9d-4fbd-bf7e-0a1be600a007",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository b40ac293-1689-4083-aa86-d896089343b2).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository b40ac293-1689-4083-aa86-d896089343b2).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "b40ac293-1689-4083-aa86-d896089343b2"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "b40ac293-1689-4083-aa86-d896089343b2"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "disguise",
+                        "RepositoryId": "642c20f9-bf41-41b4-b0bb-2491b5be938a",
+                        "HardCondition": false,
+                        "ObjectiveId": "6b85986f-7bcd-4a6b-a73b-7d4ffb0cd5fe",
+                        "KillMethod": ""
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "6b85986f-7bcd-4a6b-a73b-7d4ffb0cd5fe",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "b40ac293-1689-4083-aa86-d896089343b2"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "b40ac293-1689-4083-aa86-d896089343b2"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.OutfitRepositoryId",
+                                                    "642c20f9-bf41-41b4-b0bb-2491b5be938a"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "b40ac293-1689-4083-aa86-d896089343b2"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "5d4cacd7-5495-4a5a-badc-1632e22eaead",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository bbd56dbf-f855-4389-88b3-f8e8a924cc8b).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository bbd56dbf-f855-4389-88b3-f8e8a924cc8b).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "bbd56dbf-f855-4389-88b3-f8e8a924cc8b"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "bbd56dbf-f855-4389-88b3-f8e8a924cc8b"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "disguise",
+                        "RepositoryId": "642c20f9-bf41-41b4-b0bb-2491b5be938a",
+                        "HardCondition": false,
+                        "ObjectiveId": "f5384d30-bb74-47c1-9c54-1390f6f6ac20",
+                        "KillMethod": ""
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "f5384d30-bb74-47c1-9c54-1390f6f6ac20",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "bbd56dbf-f855-4389-88b3-f8e8a924cc8b"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "bbd56dbf-f855-4389-88b3-f8e8a924cc8b"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.OutfitRepositoryId",
+                                                    "642c20f9-bf41-41b4-b0bb-2491b5be938a"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "bbd56dbf-f855-4389-88b3-f8e8a924cc8b"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": [
+            "assembly:/_PRO/Scenes/Missions/Paris/Location_parisnoel.brick"
+        ]
+    },
+    "Metadata": {
+        "Title": "Dr. Kruger",
+        "Description": "Dr. Krueger is a crazy and narcissistic scientist who dreams of taking over the world. He imagines himself as God and created an army of androids made in his own image and likeness. These soulless mechanical creatures obey only him. Your task is to destroy all androids, neutralize Dr. Krueger and steal his helicopter. The main thing is to strike at his pride, leaving him a fool. Remember: His pride is his only weak point. Use it and the world will be saved.\r\rThis contract was created by a member of the HITMAN community known as Fenixsandr.",
+        "ScenePath": "assembly:/_PRO/Scenes/Missions/Paris/_scene_paris.entity",
+        "Location": "LOCATION_PARIS_NOEL",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 20,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 20,
+            "Build": 0,
+            "Revision": 75
+        },
+        "Type": "featured",
+        "Id": "6e19bf65-ac47-4437-b831-07e35da46357",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y26W02_06.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "c926299d-8d1d-4e04-860a-727c32be8a92"
+            },
+            {
+                "Id": "0f705c97-55d4-4248-a297-5d72efae94da"
+            },
+            {
+                "Id": "705bd4d4-2399-42e8-8db1-16143e9f9085"
+            },
+            {
+                "Id": "b644ed04-7f6e-404a-aa3d-25692c4f5c0d"
+            },
+            {
+                "Id": "b7676d72-46eb-4752-82f3-c3a137654130"
+            },
+            {
+                "Id": "295353d7-ec92-4e87-a77f-30950a4fc74f"
+            },
+            {
+                "Id": "0f3c011e-bf9d-4fbd-bf7e-0a1be600a007"
+            },
+            {
+                "Id": "6b85986f-7bcd-4a6b-a73b-7d4ffb0cd5fe"
+            },
+            {
+                "Id": "5d4cacd7-5495-4a5a-badc-1632e22eaead"
+            },
+            {
+                "Id": "f5384d30-bb74-47c1-9c54-1390f6f6ac20"
+            }
+        ],
+        "CreationTimestamp": "2025-08-11T17:00:06.2559986Z",
+        "Entitlements": [
+            "LOCATION_PARIS"
+        ],
+        "CodeName_Hint": "FC Y26W02 Dr. Kruger, created by Dr. Kruger",
+        "LastUpdate": "2026-06-05T23:42:57.2263496Z",
+        "PublicId": "036725449247"
+    },
+    "UserData": {}
+}

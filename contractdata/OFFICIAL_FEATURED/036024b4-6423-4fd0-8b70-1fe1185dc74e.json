@@ -1,0 +1,176 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "e01a9a36-c317-4896-8fbf-2207b793e02b",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 1d757c45-065c-4535-8a03-845e1f1699cd).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 1d757c45-065c-4535-8a03-845e1f1699cd).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "1d757c45-065c-4535-8a03-845e1f1699cd"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "1d757c45-065c-4535-8a03-845e1f1699cd"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "d6e50275-16e0-41c5-a3f1-245ab03df69c",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 405a95c6-c3fe-4bdb-854c-b87ed116a585).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 405a95c6-c3fe-4bdb-854c-b87ed116a585).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "405a95c6-c3fe-4bdb-854c-b87ed116a585"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "405a95c6-c3fe-4bdb-854c-b87ed116a585"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "44b1d68c-63e8-4c45-b755-50900a3585db",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository b7c5b8d7-9bc9-4b2f-8853-e2953dfcc672).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository b7c5b8d7-9bc9-4b2f-8853-e2953dfcc672).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "b7c5b8d7-9bc9-4b2f-8853-e2953dfcc672"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "b7c5b8d7-9bc9-4b2f-8853-e2953dfcc672"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "Toppled Satellites",
+        "Description": "Good morning 47. Your targets are orbiting the VIPs of today&apos;s event. They wish for them to fall. Expect long trajectories. I&apos;m certain you won&apos;t let them down. I will leave you to prepare.\r\rThis contract was created by a member of the HITMAN community known as LandirtHome.",
+        "ScenePath": "assembly:/_pro/scenes/missions/golden/mission_gecko/scene_gecko_basic.entity",
+        "Location": "LOCATION_GOLDEN_GECKO",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 22,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 22,
+            "Build": 0,
+            "Revision": 84
+        },
+        "Type": "featured",
+        "Id": "036024b4-6423-4fd0-8b70-1fe1185dc74e",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y26W09_003.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "e01a9a36-c317-4896-8fbf-2207b793e02b"
+            },
+            {
+                "Id": "d6e50275-16e0-41c5-a3f1-245ab03df69c"
+            },
+            {
+                "Id": "44b1d68c-63e8-4c45-b755-50900a3585db"
+            }
+        ],
+        "CreationTimestamp": "2026-02-12T20:11:43.8761134Z",
+        "Entitlements": [
+            "LOCATION_GOLDEN"
+        ],
+        "CodeName_Hint": "FC Y26W09 Toppled Satellites, created by LandirtHome",
+        "LastUpdate": "2026-06-05T23:43:06.9642478Z",
+        "PublicId": "027669949147"
+    },
+    "UserData": {}
+}

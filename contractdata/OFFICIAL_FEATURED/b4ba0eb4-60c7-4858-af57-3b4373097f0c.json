@@ -1,0 +1,327 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "7e805f41-ee98-48de-8ec1-211113031ad9",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository f9e60cf8-4a02-4cbd-92b1-d9887352b2aa).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository f9e60cf8-4a02-4cbd-92b1-d9887352b2aa).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "f9e60cf8-4a02-4cbd-92b1-d9887352b2aa"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "f9e60cf8-4a02-4cbd-92b1-d9887352b2aa"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "f799ba4a-6b01-4e6f-b690-ba7b36bd9838",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository f5236efc-3062-4df9-814b-a52cafa36f24).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository f5236efc-3062-4df9-814b-a52cafa36f24).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "f5236efc-3062-4df9-814b-a52cafa36f24"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "f5236efc-3062-4df9-814b-a52cafa36f24"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "killmethod_specificitem",
+                        "RepositoryId": "58769c58-3e70-4746-be8e-4c7114f8c2bb",
+                        "HardCondition": false,
+                        "ObjectiveId": "f62f4f3a-c363-43c9-a075-84637451bde8",
+                        "KillMethod": "throw"
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "f62f4f3a-c363-43c9-a075-84637451bde8",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "f5236efc-3062-4df9-814b-a52cafa36f24"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$and": [
+                                                    {
+                                                        "$eq": [
+                                                            "$Value.RepositoryId",
+                                                            "f5236efc-3062-4df9-814b-a52cafa36f24"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "$any": {
+                                                            "?": {
+                                                                "$eq": [
+                                                                    "$.#",
+                                                                    "throw"
+                                                                ]
+                                                            },
+                                                            "in": [
+                                                                "$Value.KillMethodBroad",
+                                                                "$Value.KillMethodStrict"
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.KillItemRepositoryId",
+                                                    "58769c58-3e70-4746-be8e-4c7114f8c2bb"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "f5236efc-3062-4df9-814b-a52cafa36f24"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "5694aecf-aa85-4551-8bcf-f651a6357b9c",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 02bdd2c2-4311-4d62-a699-fa4ee07fc55f).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 02bdd2c2-4311-4d62-a699-fa4ee07fc55f).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "02bdd2c2-4311-4d62-a699-fa4ee07fc55f"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "02bdd2c2-4311-4d62-a699-fa4ee07fc55f"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "1a596216-381e-4592-9798-26f156973942",
+                "ObjectiveType": "custom",
+                "Category": "secondary",
+                "BriefingName": "$loc UI_CONTRACT_UGC_TIME_LIMIT_NAME",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_UGC_TIME_LIMIT_SECONDARY_DESC",
+                        "data": "$formatstring 20:10"
+                    }
+                },
+                "LongBriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_UGC_TIME_LIMIT_SECONDARY_DESC",
+                        "data": "$formatstring 20:10"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_UGC_TIME_LIMIT_SECONDARY_DESC",
+                            "data": "$formatstring 20:10"
+                        }
+                    }
+                },
+                "Image": "images/contractconditions/condition_contrac_time_limit.jpg",
+                "OnActive": {
+                    "IfInProgress": {
+                        "State": "Completed"
+                    }
+                },
+                "CombinedDisplayInHud": true,
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "IntroCutEnd": [
+                                {
+                                    "Transition": "TimerRunning"
+                                }
+                            ]
+                        },
+                        "TimerRunning": {
+                            "exit_gate": [
+                                {
+                                    "Transition": "Success"
+                                }
+                            ],
+                            "$timer": [
+                                {
+                                    "Condition": {
+                                        "$after": 1210.0001220703125
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": [],
+        "Entrances": [
+            "0aec817c-738e-4381-bbd4-a13b5d1c6730",
+            "b38a7610-5f7f-4fcb-ad09-c554c3544367",
+            "3812ea57-e29c-42cb-b93a-ea2d3e6a6806",
+            "5a60147f-9c85-4998-b70f-1441ee7ba9b1",
+            "d4ec0c94-02b2-4aae-be9e-cbb5cc7d7e4a",
+            "5314c86b-7173-412b-a0b5-b0d9af2da722",
+            "feaf524e-f54d-4815-bb2b-afb8f1a39141",
+            "0809cabd-20f1-4fd4-b4fc-9cdc86bdf7cf"
+        ]
+    },
+    "Metadata": {
+        "Title": "The Horse",
+        "Description": "Hey,hey. Are you asleep? Answer great and powerful 47 ! Now you become a horse. As for how becoming back, completing missions in three days. Enjoy your time !\r\rThis contract was created by a member of the HITMAN community known as AWIND.\r\rFC72",
+        "ScenePath": "assembly:/_pro/scenes/missions/Ancestral/scene_bulldog.entity",
+        "Location": "LOCATION_ANCESTRAL_BULLDOG",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 22,
+            "Build": 0,
+            "Revision": 83
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 22,
+            "Build": 0,
+            "Revision": 83
+        },
+        "Type": "featured",
+        "Id": "b4ba0eb4-60c7-4858-af57-3b4373097f0c",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y26W07_007_TheHorse.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "7e805f41-ee98-48de-8ec1-211113031ad9"
+            },
+            {
+                "Id": "f799ba4a-6b01-4e6f-b690-ba7b36bd9838"
+            },
+            {
+                "Id": "f62f4f3a-c363-43c9-a075-84637451bde8"
+            },
+            {
+                "Id": "5694aecf-aa85-4551-8bcf-f651a6357b9c"
+            },
+            {
+                "Id": "1a596216-381e-4592-9798-26f156973942"
+            }
+        ],
+        "CreationTimestamp": "2026-01-27T13:01:53.5809178Z",
+        "Entitlements": [
+            "LOCATION_ANCESTRAL"
+        ],
+        "CodeName_Hint": "FC Y26W07 Three &quot;days&quot; of horsetown, created by AWIND",
+        "LastUpdate": "2026-06-05T23:43:05.2616301Z",
+        "PublicId": "028585276547"
+    },
+    "UserData": {}
+}

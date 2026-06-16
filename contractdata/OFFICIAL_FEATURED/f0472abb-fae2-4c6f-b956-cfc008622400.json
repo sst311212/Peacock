@@ -1,0 +1,266 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "5d81f295-7c9a-49a8-abdf-f490add88bf8",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository b13314ab-ea25-48b7-9e51-8ebb87788e20).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository b13314ab-ea25-48b7-9e51-8ebb87788e20).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "b13314ab-ea25-48b7-9e51-8ebb87788e20"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "b13314ab-ea25-48b7-9e51-8ebb87788e20"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "b42c8204-822b-47b5-8b71-7cc89e79dabf",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository f7bb9a06-bbaa-464b-97b3-e3a2eb85711d).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository f7bb9a06-bbaa-464b-97b3-e3a2eb85711d).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "f7bb9a06-bbaa-464b-97b3-e3a2eb85711d"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "f7bb9a06-bbaa-464b-97b3-e3a2eb85711d"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "55db87bc-4293-422e-ab9e-8fff12874e03",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository a1f7ac80-7fe3-4df1-b332-539c78a72a87).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository a1f7ac80-7fe3-4df1-b332-539c78a72a87).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "a1f7ac80-7fe3-4df1-b332-539c78a72a87"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "a1f7ac80-7fe3-4df1-b332-539c78a72a87"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "cb4e3ded-15c5-4f74-862c-2b2db8ff25b6",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository e0143799-7291-4e70-b761-3f960bf99a42).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository e0143799-7291-4e70-b761-3f960bf99a42).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "e0143799-7291-4e70-b761-3f960bf99a42"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "e0143799-7291-4e70-b761-3f960bf99a42"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "a3706e8d-8a21-4a6b-af00-1af9114787eb",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 4c0b5fd0-f546-4855-b841-3edb76f2db10).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 4c0b5fd0-f546-4855-b841-3edb76f2db10).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "4c0b5fd0-f546-4855-b841-3edb76f2db10"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "4c0b5fd0-f546-4855-b841-3edb76f2db10"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "PATIENCE ELIMINATES MOVEMENTS",
+        "Description": "These are the &quot;basics&quot; use your &quot;patience&quot; to eliminate the &quot;movements&quot;of all the targets.                                                                                              Good luck on your journey, I am sure you will do well.                                                                By: STREET SURG30N\r\rThis contract was created by a member of the HITMAN community known as Street Surg30n.",
+        "ScenePath": "assembly:/_PRO/Scenes/Missions/Hokkaido/_scene_snowcrane.entity",
+        "Location": "LOCATION_HOKKAIDO",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 23,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 23,
+            "Build": 0,
+            "Revision": 86
+        },
+        "Type": "featured",
+        "Id": "f0472abb-fae2-4c6f-b956-cfc008622400",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y26W18_01.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "5d81f295-7c9a-49a8-abdf-f490add88bf8"
+            },
+            {
+                "Id": "b42c8204-822b-47b5-8b71-7cc89e79dabf"
+            },
+            {
+                "Id": "55db87bc-4293-422e-ab9e-8fff12874e03"
+            },
+            {
+                "Id": "cb4e3ded-15c5-4f74-862c-2b2db8ff25b6"
+            },
+            {
+                "Id": "a3706e8d-8a21-4a6b-af00-1af9114787eb"
+            }
+        ],
+        "CreationTimestamp": "2026-03-01T18:45:05.9636336Z",
+        "Entitlements": [
+            "LOCATION_HOKKAIDO"
+        ],
+        "CodeName_Hint": "FC Y26W15 PATIENCE ELIMINATES MOVEMENTS, created by Street Surg30n",
+        "LastUpdate": "2026-06-05T23:43:01.9989419Z",
+        "PublicId": "010812199047"
+    },
+    "UserData": {}
+}

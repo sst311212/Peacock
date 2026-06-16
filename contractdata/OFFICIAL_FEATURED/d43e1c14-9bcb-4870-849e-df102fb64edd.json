@@ -1,0 +1,235 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "6138fa98-4a4d-4eee-9329-1d2b5d7c5837",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 5cb87a25-3b0f-4a12-b338-228ea9e7a662).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 5cb87a25-3b0f-4a12-b338-228ea9e7a662).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "5cb87a25-3b0f-4a12-b338-228ea9e7a662"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "5cb87a25-3b0f-4a12-b338-228ea9e7a662"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "disguise",
+                        "RepositoryId": "bef91840-e5aa-4a44-9f2e-30c732b1f7be",
+                        "HardCondition": false,
+                        "ObjectiveId": "74d1c737-76e1-4f5d-9efe-93f97fcbef0a",
+                        "KillMethod": ""
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "74d1c737-76e1-4f5d-9efe-93f97fcbef0a",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "5cb87a25-3b0f-4a12-b338-228ea9e7a662"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "5cb87a25-3b0f-4a12-b338-228ea9e7a662"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.OutfitRepositoryId",
+                                                    "bef91840-e5aa-4a44-9f2e-30c732b1f7be"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "5cb87a25-3b0f-4a12-b338-228ea9e7a662"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "4ce6e606-194c-4910-bec8-0e1f36dcbcd8",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 16d905ea-faa1-411c-a0c2-96e5ca09fb6a).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 16d905ea-faa1-411c-a0c2-96e5ca09fb6a).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "16d905ea-faa1-411c-a0c2-96e5ca09fb6a"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "16d905ea-faa1-411c-a0c2-96e5ca09fb6a"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "0c75ef96-98c3-48a9-a2eb-c561a78543fb",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository bc6da930-0bde-4442-bfe7-8a10a0b8df61).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository bc6da930-0bde-4442-bfe7-8a10a0b8df61).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "bc6da930-0bde-4442-bfe7-8a10a0b8df61"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "bc6da930-0bde-4442-bfe7-8a10a0b8df61"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "Bakemono!",
+        "Description": "When the Ark Society first settled, a terrible tragedy befell the isle. Cast into the sea was Methuselah Block by trusted colleague Janus, his body disappearing forever while his soul remained.\r\rWith Janus&apos; corpse returned for his funeral wake ceremony, Block animates once more, and you were chosen to assume his corporeal vengeance.\r\rAssume a disloyal form as Janus had, and be reborn as the vindictive obake to eliminate those who wish to immortalize Janus as the hero he proclaimed himself to be.\r\rThis contract was created by a member of the HITMAN community known as Sniff.",
+        "ScenePath": "assembly:/_pro/scenes/missions/theark/scene_magpie.entity",
+        "Location": "LOCATION_NORTHSEA",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 20,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 20,
+            "Build": 0,
+            "Revision": 75
+        },
+        "Type": "featured",
+        "Id": "d43e1c14-9bcb-4870-849e-df102fb64edd",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y25W44_01.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "6138fa98-4a4d-4eee-9329-1d2b5d7c5837"
+            },
+            {
+                "Id": "74d1c737-76e1-4f5d-9efe-93f97fcbef0a"
+            },
+            {
+                "Id": "4ce6e606-194c-4910-bec8-0e1f36dcbcd8"
+            },
+            {
+                "Id": "0c75ef96-98c3-48a9-a2eb-c561a78543fb"
+            }
+        ],
+        "CreationTimestamp": "2025-08-02T03:55:10.0579294Z",
+        "Entitlements": [
+            "LOCATION_NORTHSEA"
+        ],
+        "CodeName_Hint": "FC Y25W44 Bakemono!, created by Sniff",
+        "LastUpdate": "2026-06-05T23:42:54.8355029Z",
+        "PublicId": "021966937647"
+    },
+    "UserData": {}
+}

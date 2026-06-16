@@ -1,0 +1,266 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "655a0501-dbf1-4959-9a63-76bae2e904c6",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository fb2670e1-e16d-4e66-bb04-12e5d6e5bcb0).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository fb2670e1-e16d-4e66-bb04-12e5d6e5bcb0).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "fb2670e1-e16d-4e66-bb04-12e5d6e5bcb0"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "fb2670e1-e16d-4e66-bb04-12e5d6e5bcb0"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "444aa8fe-407a-423e-a3c9-1eb280f2558b",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 7bab34e1-6184-459c-9542-43eb392a3368).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 7bab34e1-6184-459c-9542-43eb392a3368).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "7bab34e1-6184-459c-9542-43eb392a3368"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "7bab34e1-6184-459c-9542-43eb392a3368"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "311ce549-f12c-4d59-9318-b22909aa64c3",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 45a2ffd6-9f7d-4615-a8ab-6609eb09100b).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 45a2ffd6-9f7d-4615-a8ab-6609eb09100b).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "45a2ffd6-9f7d-4615-a8ab-6609eb09100b"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "45a2ffd6-9f7d-4615-a8ab-6609eb09100b"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "3bee6fec-8405-415c-baa3-d7c96feee42d",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository ddf117ad-bf1c-4aff-87a4-cb95fce52f3b).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository ddf117ad-bf1c-4aff-87a4-cb95fce52f3b).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "ddf117ad-bf1c-4aff-87a4-cb95fce52f3b"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "ddf117ad-bf1c-4aff-87a4-cb95fce52f3b"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "e73c5e6f-8684-4d8e-a938-3dccdf88307a",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 2fa9698f-eb9b-4991-8aaf-3bddcf23e247).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 2fa9698f-eb9b-4991-8aaf-3bddcf23e247).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "2fa9698f-eb9b-4991-8aaf-3bddcf23e247"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "2fa9698f-eb9b-4991-8aaf-3bddcf23e247"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "WHITE, I PRESUME",
+        "Description": "Welcome agent, identity theft has become a threat to society. This group of people are pretending to be someone they&apos;re not just to be accepted by high society and take advantage of having a popular last name. This contract was created by members of the HITMAN community known as josthin and Fe203 T.\r\rThis contract was created by a member of the HITMAN community known as josthin and Fe2O3 T.",
+        "ScenePath": "assembly:/_pro/scenes/missions/golden/mission_gecko/scene_gecko_basic.entity",
+        "Location": "LOCATION_GOLDEN_GECKO",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 18,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 18,
+            "Build": 0,
+            "Revision": 68
+        },
+        "Type": "featured",
+        "Id": "0bfb3bf3-2b29-42a0-9a1a-f590d9fc788b",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y25W20_01.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "655a0501-dbf1-4959-9a63-76bae2e904c6"
+            },
+            {
+                "Id": "444aa8fe-407a-423e-a3c9-1eb280f2558b"
+            },
+            {
+                "Id": "311ce549-f12c-4d59-9318-b22909aa64c3"
+            },
+            {
+                "Id": "3bee6fec-8405-415c-baa3-d7c96feee42d"
+            },
+            {
+                "Id": "e73c5e6f-8684-4d8e-a938-3dccdf88307a"
+            }
+        ],
+        "CreationTimestamp": "2025-01-24T02:06:52.3017107Z",
+        "Entitlements": [
+            "LOCATION_GOLDEN"
+        ],
+        "CodeName_Hint": "FC Y25W19 WHITE, I PRESUME, created by josthin and Fe2O3 T",
+        "LastUpdate": "2026-06-05T23:43:07.8116806Z",
+        "PublicId": "027162607047"
+    },
+    "UserData": {}
+}

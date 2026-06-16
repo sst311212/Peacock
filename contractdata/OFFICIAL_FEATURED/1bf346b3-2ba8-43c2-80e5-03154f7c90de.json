@@ -1,0 +1,162 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "f77edbbb-5795-47ed-ad28-88c8b48748d1",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 9c81b545-a234-46c5-9296-54f9f2a0bb6d).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 9c81b545-a234-46c5-9296-54f9f2a0bb6d).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "9c81b545-a234-46c5-9296-54f9f2a0bb6d"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "9c81b545-a234-46c5-9296-54f9f2a0bb6d"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "killmethod",
+                        "RepositoryId": "00000000-0000-0000-0000-000000000000",
+                        "HardCondition": false,
+                        "ObjectiveId": "7fb6a8e6-faf0-4a6b-a80e-b04857fd7589",
+                        "KillMethod": "accident_push"
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "7fb6a8e6-faf0-4a6b-a80e-b04857fd7589",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "9c81b545-a234-46c5-9296-54f9f2a0bb6d"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "9c81b545-a234-46c5-9296-54f9f2a0bb6d"
+                                                ]
+                                            },
+                                            {
+                                                "$any": {
+                                                    "?": {
+                                                        "$eq": [
+                                                            "$.#",
+                                                            "accident_push"
+                                                        ]
+                                                    },
+                                                    "in": [
+                                                        "$Value.KillMethodBroad",
+                                                        "$Value.KillMethodStrict"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "9c81b545-a234-46c5-9296-54f9f2a0bb6d"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [
+            "008d2eb9-c1c8-44e0-a636-ccca63629f3c",
+            "95690829-7da4-4225-a087-08918cccf120"
+        ],
+        "Bricks": [],
+        "Stashpoints": [
+            "ea156a43-2020-4fee-b726-a5d01c2b0cc2"
+        ],
+        "Entrances": [
+            "da717656-934e-4783-8c36-65bf486cfdfa"
+        ]
+    },
+    "Metadata": {
+        "Title": "The idol I pushed",
+        "Description": "Good evening, 47. Welcome to Sapienza. \rWe client is a fanatic fan of cult graphic novel The Icon, who dissatisfied with the adaptation-or just say out, the subversion-of the novel by the film, so he want to assassinate Dino Bosco, the film&apos;s director and leading man. \rIn order to restore the original work, client asked to make it seem to be done by supernatural forces, which means don&apos;t disturb anyone, don&apos;t take anything, and let the target die overhead.\rThe clock is ticking, 47. Good luck.\r\rThis contract was created by a member of the HITMAN community known as BlueberryMuffin.",
+        "ScenePath": "assembly:/_pro/scenes/missions/coastaltown/_scene_copperhead.entity",
+        "Location": "LOCATION_COASTALTOWN_MOVIESET",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 20,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 20,
+            "Build": 0,
+            "Revision": 76
+        },
+        "Type": "featured",
+        "Id": "1bf346b3-2ba8-43c2-80e5-03154f7c90de",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y26W02_01.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "f77edbbb-5795-47ed-ad28-88c8b48748d1"
+            },
+            {
+                "Id": "7fb6a8e6-faf0-4a6b-a80e-b04857fd7589"
+            }
+        ],
+        "CreationTimestamp": "2025-08-25T17:47:35.2375365Z",
+        "Entitlements": [
+            "LOCATION_COASTALTOWN"
+        ],
+        "CodeName_Hint": "FC Y26W02 The idol I pushed, created by BlueberryMuffin",
+        "LastUpdate": "2026-06-05T23:43:05.296514Z",
+        "PublicId": "005088984647"
+    },
+    "UserData": {}
+}

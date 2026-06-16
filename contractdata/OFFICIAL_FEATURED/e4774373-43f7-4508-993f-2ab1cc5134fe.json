@@ -1,0 +1,302 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "a7164207-4dd9-43d6-8fc5-29449530bc7c",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 35631713-9223-4845-9c6c-e5e692d5f62d).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 35631713-9223-4845-9c6c-e5e692d5f62d).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "35631713-9223-4845-9c6c-e5e692d5f62d"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "35631713-9223-4845-9c6c-e5e692d5f62d"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "hitmansuit",
+                        "RepositoryId": "16be233a-1eb8-4736-b87f-c2a69a2db14b",
+                        "HardCondition": false,
+                        "ObjectiveId": "71872d5c-b224-43c0-8c4e-f0f235685828",
+                        "KillMethod": ""
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "71872d5c-b224-43c0-8c4e-f0f235685828",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "35631713-9223-4845-9c6c-e5e692d5f62d"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "35631713-9223-4845-9c6c-e5e692d5f62d"
+                                                ]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.OutfitIsHitmanSuit",
+                                                    true
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "35631713-9223-4845-9c6c-e5e692d5f62d"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "64da496d-afcb-4454-b171-588e62797c1f",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository c099d7be-0a2f-45dc-b790-d2873829a9c1).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository c099d7be-0a2f-45dc-b790-d2873829a9c1).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "c099d7be-0a2f-45dc-b790-d2873829a9c1"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "c099d7be-0a2f-45dc-b790-d2873829a9c1"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "34713560-f9cc-44d1-8e2d-b30333e3959c",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 9abc11ff-672e-46c1-ac65-b55a23246445).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 9abc11ff-672e-46c1-ac65-b55a23246445).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "9abc11ff-672e-46c1-ac65-b55a23246445"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "9abc11ff-672e-46c1-ac65-b55a23246445"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "killmethod",
+                        "RepositoryId": "a8a0c154-c36f-413e-8f29-b83a1b7a22f0",
+                        "HardCondition": false,
+                        "ObjectiveId": "15b7451b-84be-4d56-a062-50b90d3ec98c",
+                        "KillMethod": "accident"
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "15b7451b-84be-4d56-a062-50b90d3ec98c",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "9abc11ff-672e-46c1-ac65-b55a23246445"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "9abc11ff-672e-46c1-ac65-b55a23246445"
+                                                ]
+                                            },
+                                            {
+                                                "$any": {
+                                                    "?": {
+                                                        "$eq": [
+                                                            "$.#",
+                                                            "accident"
+                                                        ]
+                                                    },
+                                                    "in": [
+                                                        "$Value.KillMethodBroad",
+                                                        "$Value.KillMethodStrict"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "9abc11ff-672e-46c1-ac65-b55a23246445"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "Rabbits in Bangkok!?",
+        "Description": "Bangkok doesn&apos;t have rabbits...But a yellow one just hopped in. Word is, it has a taste for blood too.\r\rThis contract was created by a member of the HITMAN community known as ZJXDL.",
+        "ScenePath": "assembly:/_PRO/Scenes/Missions/Bangkok/_scene_tiger.entity",
+        "Location": "LOCATION_BANGKOK",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 23,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 23,
+            "Build": 0,
+            "Revision": 86
+        },
+        "Type": "featured",
+        "Id": "e4774373-43f7-4508-993f-2ab1cc5134fe",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y26W13_010.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "a7164207-4dd9-43d6-8fc5-29449530bc7c"
+            },
+            {
+                "Id": "71872d5c-b224-43c0-8c4e-f0f235685828"
+            },
+            {
+                "Id": "64da496d-afcb-4454-b171-588e62797c1f"
+            },
+            {
+                "Id": "34713560-f9cc-44d1-8e2d-b30333e3959c"
+            },
+            {
+                "Id": "15b7451b-84be-4d56-a062-50b90d3ec98c"
+            }
+        ],
+        "CreationTimestamp": "2026-03-13T09:25:13.8855689Z",
+        "Entitlements": [
+            "LOCATION_BANGKOK"
+        ],
+        "CodeName_Hint": "FC Y26W13 Rabbits in Bangkok!?, created by ZJXDL",
+        "LastUpdate": "2026-06-05T23:43:02.3956884Z",
+        "PublicId": "008516776147"
+    },
+    "UserData": {}
+}

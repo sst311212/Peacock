@@ -1,0 +1,301 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "23c8620f-b6de-4a69-accc-314dfeeb9f6f",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 3aea7ad5-ae36-4afe-bc70-a322ff862431).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 3aea7ad5-ae36-4afe-bc70-a322ff862431).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "3aea7ad5-ae36-4afe-bc70-a322ff862431"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "3aea7ad5-ae36-4afe-bc70-a322ff862431"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "killmethod",
+                        "RepositoryId": "00000000-0000-0000-0000-000000000000",
+                        "HardCondition": false,
+                        "ObjectiveId": "d63f4460-2b09-4980-9a70-ce8f6eeae028",
+                        "KillMethod": "accident_push"
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "d63f4460-2b09-4980-9a70-ce8f6eeae028",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "3aea7ad5-ae36-4afe-bc70-a322ff862431"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "3aea7ad5-ae36-4afe-bc70-a322ff862431"
+                                                ]
+                                            },
+                                            {
+                                                "$any": {
+                                                    "?": {
+                                                        "$eq": [
+                                                            "$.#",
+                                                            "accident_push"
+                                                        ]
+                                                    },
+                                                    "in": [
+                                                        "$Value.KillMethodBroad",
+                                                        "$Value.KillMethodStrict"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "3aea7ad5-ae36-4afe-bc70-a322ff862431"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "ba0c9f33-ee2d-4381-bac9-bfc77ed23cf1",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository c32ada8e-a184-432e-9a7e-d027dfaa8faf).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository c32ada8e-a184-432e-9a7e-d027dfaa8faf).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "c32ada8e-a184-432e-9a7e-d027dfaa8faf"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "c32ada8e-a184-432e-9a7e-d027dfaa8faf"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TargetConditions": [
+                    {
+                        "Type": "killmethod",
+                        "RepositoryId": "00000000-0000-0000-0000-000000000000",
+                        "HardCondition": false,
+                        "ObjectiveId": "cbbf0650-637d-4edc-93a4-0e847a2027d6",
+                        "KillMethod": "accident_push"
+                    }
+                ]
+            },
+            {
+                "Type": "statemachine",
+                "Id": "cbbf0650-637d-4edc-93a4-0e847a2027d6",
+                "Category": "secondary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "c32ada8e-a184-432e-9a7e-d027dfaa8faf"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": [
+                                                    "$Value.RepositoryId",
+                                                    "c32ada8e-a184-432e-9a7e-d027dfaa8faf"
+                                                ]
+                                            },
+                                            {
+                                                "$any": {
+                                                    "?": {
+                                                        "$eq": [
+                                                            "$.#",
+                                                            "accident_push"
+                                                        ]
+                                                    },
+                                                    "in": [
+                                                        "$Value.KillMethodBroad",
+                                                        "$Value.KillMethodStrict"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                },
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "c32ada8e-a184-432e-9a7e-d027dfaa8faf"
+                                        ]
+                                    },
+                                    "Transition": "Failure"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "_comment": "----- Do Not Eliminate Diana Burnwood -----",
+                "Id": "261ec7b9-6c3b-4fc2-af0b-af894b8e04db",
+                "Category": "primary",
+                "isHidden": "true",
+                "ObjectiveType": "custom",
+                "ForceShowOnLoadingScreen": false,
+                "ExcludeFromScoring": true,
+                "Image": "images/actors/Llama_Diana_Burnwood.jpg",
+                "BriefingName": "$loc UI_CONTRACT_LLAMA_DIANA_NAME",
+                "BriefingText": "$loc UI_CONTRACT_LLAMA_DIANA_NAME",
+                "Type": "statemachine",
+                "Definition": {
+                    "Scope": "session",
+                    "States": {
+                        "Start": {
+                            "-": {
+                                "Transition": "Success"
+                            }
+                        },
+                        "Success": {
+                            "Kill": {
+                                "Condition": {
+                                    "$eq": [
+                                        "$Value.RepositoryId",
+                                        "0e2111f1-d5ab-4a06-90ce-703abd6d3f91"
+                                    ]
+                                },
+                                "Transition": "Failure"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "The Spy Who Shoved Me",
+        "Description": "A recording between megalomaniac Augusto Albarez and compromised Agent Felix Albert was found washed up on shore:\r\r-\r\r&quot;I, THE Augusto Albarez, plan on making land SO unhabitable that everyone will have to adapt to my all-new watery city!&quot;\r\r&quot;. . . Do you always stand close to edges and cliffs when you expuld your monologue?&quot;\r\r&quot;Well, if I&apos;m not ready to dive in at any moment, who will?&quot;\r\r&quot;Fair enough. Let&apos;s go swimming, Albarez.&quot;\r\rThis contract was created by a member of the HITMAN community known as Ashley.",
+        "ScenePath": "assembly:/_pro/scenes/missions/elegant/scene_llama.entity",
+        "Location": "LOCATION_ELEGANT_LLAMA",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 23,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 23,
+            "Build": 0,
+            "Revision": 88
+        },
+        "Type": "featured",
+        "Id": "e2ae870c-0cda-4d58-b7a3-c51e00009913",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y26W23_10.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "23c8620f-b6de-4a69-accc-314dfeeb9f6f"
+            },
+            {
+                "Id": "d63f4460-2b09-4980-9a70-ce8f6eeae028"
+            },
+            {
+                "Id": "ba0c9f33-ee2d-4381-bac9-bfc77ed23cf1"
+            },
+            {
+                "Id": "cbbf0650-637d-4edc-93a4-0e847a2027d6"
+            },
+            {
+                "Id": "261ec7b9-6c3b-4fc2-af0b-af894b8e04db"
+            }
+        ],
+        "CreationTimestamp": "2026-06-05T23:43:06.2030087Z",
+        "Entitlements": [
+            "LOCATION_ELEGANT"
+        ],
+        "CodeName_Hint": "FC Y26W23 The Spy Who Shoved Me, created by Ashley",
+        "PublicId": "031835778047"
+    },
+    "UserData": {}
+}

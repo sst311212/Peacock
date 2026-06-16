@@ -1,0 +1,221 @@
+{
+    "Data": {
+        "Objectives": [
+            {
+                "Type": "statemachine",
+                "Id": "0afa80a1-8d23-4ca9-8e02-d29534578902",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository a3a87b62-99b5-45e4-8b55-bd2402c0023b).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository a3a87b62-99b5-45e4-8b55-bd2402c0023b).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "a3a87b62-99b5-45e4-8b55-bd2402c0023b"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "a3a87b62-99b5-45e4-8b55-bd2402c0023b"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "b05fee5e-ea0f-4fd9-8834-89ae99977509",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 92d1df2c-91ad-4588-b01f-5d0326732cee).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 92d1df2c-91ad-4588-b01f-5d0326732cee).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "92d1df2c-91ad-4588-b01f-5d0326732cee"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "92d1df2c-91ad-4588-b01f-5d0326732cee"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "16c331c3-44d5-475a-8c1e-4ae8cbac3e86",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 323c2e9b-cced-45fa-bb7b-5815685cf8cd).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 323c2e9b-cced-45fa-bb7b-5815685cf8cd).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "323c2e9b-cced-45fa-bb7b-5815685cf8cd"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "323c2e9b-cced-45fa-bb7b-5815685cf8cd"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "Type": "statemachine",
+                "Id": "f36e6d76-9544-4640-8ba1-0d51352b74f7",
+                "BriefingText": {
+                    "$loc": {
+                        "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                        "data": "$($repository 01a8b5ac-9afd-4ada-b7c7-566e2ed98638).Name"
+                    }
+                },
+                "HUDTemplate": {
+                    "display": {
+                        "$loc": {
+                            "key": "UI_CONTRACT_GENERAL_OBJ_KILL",
+                            "data": "$($repository 01a8b5ac-9afd-4ada-b7c7-566e2ed98638).Name"
+                        }
+                    }
+                },
+                "Category": "primary",
+                "Definition": {
+                    "Scope": "Hit",
+                    "Context": {
+                        "Targets": [
+                            "01a8b5ac-9afd-4ada-b7c7-566e2ed98638"
+                        ]
+                    },
+                    "States": {
+                        "Start": {
+                            "Kill": [
+                                {
+                                    "Condition": {
+                                        "$eq": [
+                                            "$Value.RepositoryId",
+                                            "01a8b5ac-9afd-4ada-b7c7-566e2ed98638"
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "GameChangers": [],
+        "Bricks": []
+    },
+    "Metadata": {
+        "Title": "RAIDERS OF THE STOLEN ARK (SOCIETY)",
+        "Description": "Welcome agent, Kaiden Lara is credited for many crimes, but her crime streak is to be stopped at the inaugural ceremony of The Ark Society where a new constant is to be elected and she&apos;s the main candidate. Stop her from usurping control, and eliminate her bodyguards who are co-conspirators before is too late. This contract was created by members of the HITMAN community known as josthin and Il Lime ll.\r\rThis contract was created by a member of the HITMAN community known as josthin and Il Lime ll.",
+        "ScenePath": "assembly:/_pro/scenes/missions/theark/scene_magpie.entity",
+        "Location": "LOCATION_NORTHSEA",
+        "IsPublished": true,
+        "CreatorUserId": "fadb923c-e6bb-4283-a537-eb4d1150262e",
+        "GameVersion": {
+            "Major": 8,
+            "Minor": 18,
+            "Build": 0,
+            "Revision": 0
+        },
+        "ServerVersion": {
+            "Major": 8,
+            "Minor": 18,
+            "Build": 0,
+            "Revision": 68
+        },
+        "Type": "featured",
+        "Id": "256cd336-8fc6-43ab-98c9-3489ef4e81fb",
+        "TileImage": "images/contracts/featuredcontracts/FC_Y25W20_04.jpg",
+        "GroupObjectiveDisplayOrder": [
+            {
+                "Id": "0afa80a1-8d23-4ca9-8e02-d29534578902"
+            },
+            {
+                "Id": "b05fee5e-ea0f-4fd9-8834-89ae99977509"
+            },
+            {
+                "Id": "16c331c3-44d5-475a-8c1e-4ae8cbac3e86"
+            },
+            {
+                "Id": "f36e6d76-9544-4640-8ba1-0d51352b74f7"
+            }
+        ],
+        "CreationTimestamp": "2025-01-26T04:43:19.6133019Z",
+        "CodeName_Hint": "FC Y25W19 RAIDERS OF THE STOLEN ARK (SOCIETY), created by josthin and Il Lime ll",
+        "Entitlements": [
+            "LOCATION_NORTHSEA"
+        ],
+        "LastUpdate": "2026-06-05T23:43:02.4134944Z",
+        "PublicId": "021417540947"
+    },
+    "UserData": {}
+}
