@@ -81,6 +81,7 @@ import { getFlag, saveFlags } from "./flags"
 import { initializePeacockMenu } from "./menus/settings"
 import { ConfigRouteParams } from "./types/gameSchemas"
 import { getSocketActivationFileDescriptors } from "./socketActivation"
+import { modInst as EasyMod, STEAM_NAMESPACE_DEMO } from "./EasyMod"
 
 const host = process.env.HOST || "0.0.0.0"
 const port = process.env.PORT || 80
@@ -230,6 +231,7 @@ app.get(
         }
 
         switch (req.query.issuer) {
+            case STEAM_NAMESPACE_DEMO:
             case STEAM_NAMESPACE_2021:
                 config.Versions[0].SERVER_VER.GlobalAuthentication.RequestedAudience =
                     "steam-prod_8"
@@ -364,6 +366,7 @@ app.use(
                     req.serverVersion = "7-17"
                     break
                 case "fghi4567xQOCheZIin0pazB47qGUvZw4":
+                case STEAM_NAMESPACE_DEMO:
                 case STEAM_NAMESPACE_2021:
                     req.serverVersion = "8-25"
                     break
@@ -553,6 +556,8 @@ export async function startServer(options: {
             ),
         )
     }
+
+    await EasyMod.Init()
 
     try {
         // make sure required folder structure is in place
