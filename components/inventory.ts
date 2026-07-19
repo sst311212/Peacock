@@ -62,6 +62,7 @@ import { getFlag } from "./flags"
 import { UnlockableMasteryData } from "./types/mastery"
 import { attainableDefaults, defaultSuits } from "./utils"
 import { log, LogLevel } from "./loggingInterop"
+import { modInst as EasyMod } from "./EasyMod"
 
 export const ISOLATED_UNLOCKABLES_EXEMPT = [
     "TOKEN_OUTFIT_HERO_BLACKSPECIAL_SUIT", // Black Streak Suit
@@ -425,6 +426,10 @@ export class InventoryService {
             }
 
             if (unlockContainer.Unlockable.Type === "evergreenmastery") {
+                return false
+            }
+
+            if (EasyMod.DISABLED_UNLOCKABLES.includes(id)) {
                 return false
             }
 
