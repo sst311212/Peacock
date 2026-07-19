@@ -102,12 +102,13 @@ export class OfficialServerAuth {
      */
     async _initiallyAuthenticate(req: Request): Promise<void> {
         try {
-            const r = await this._firstTimeObtainData(req)
-            const decodedToken = decode(r.access_token) as unknown as JwtData
+            log(LogLevel.DEBUG, "Skip authenticate with official servers.")
+            // const r = await this._firstTimeObtainData(req)
+            // const decodedToken = decode(r.access_token) as unknown as JwtData
 
-            this._usableToken = r.access_token
-            this._refreshToken = r.refresh_token
-            this.profileId = decodedToken.unique_name
+            // this._usableToken = r.access_token
+            // this._refreshToken = r.refresh_token
+            // this.profileId = decodedToken.unique_name
             this.initialized = true
         } catch (e) {
             handleAxiosError(e as AxiosError)
@@ -168,17 +169,18 @@ export class OfficialServerAuth {
 
         const body = `grant_type=refresh_token&refresh_token=${this._refreshToken}&authcode=${this._gameAuthToken}`
 
-        const res = await axios("https://auth.hitman.io/oauth/token", {
-            headers: {
-                ...this._headers,
-                Authorization: `bearer ${this._usableToken}`,
-            },
-            data: body,
-        })
+        log(LogLevel.DEBUG, "Skip reauthenticate with official servers.")
+        // const res = await axios("https://auth.hitman.io/oauth/token", {
+        //     headers: {
+        //         ...this._headers,
+        //         Authorization: `bearer ${this._usableToken}`,
+        //     },
+        //     data: body,
+        // })
 
-        const r = res.data as AuthResponse
-        this._usableToken = r.access_token
-        this._refreshToken = r.refresh_token
+        // const r = res.data as AuthResponse
+        // this._usableToken = r.access_token
+        // this._refreshToken = r.refresh_token
         this.initialized = true
     }
 

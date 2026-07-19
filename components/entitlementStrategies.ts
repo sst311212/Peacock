@@ -34,6 +34,7 @@ import {
     PEACOCKVERSTRING,
 } from "./utils"
 import { getFlag } from "./flags"
+import { modInst as EasyMod } from "./EasyMod"
 
 // An in-memory cache of valid Steam ownership ticket hashes (they're valid for up to 21 days)
 // For most users, this won't provide any benefit since they'll be restarting Peacock often,
@@ -65,6 +66,8 @@ abstract class EntitlementStrategy {
  */
 export class EpicH3Strategy extends EntitlementStrategy {
     override async get(accessToken: string, userId: string) {
+        return EasyMod.H3_EPIC_ENTITLEMENTS
+
         return await getEpicEntitlements(
             EPIC_NAMESPACE_2021,
             userId,
@@ -303,6 +306,8 @@ export class SteamStrategy extends EntitlementStrategy {
         identity: string,
         steamId: string,
     ): Promise<string[]> {
+        return EasyMod.H3_STEAM_ENTITLEMENTS
+
         if (!this.isValid) return []
 
         const ticket = parseAppTicket(Buffer.from(clientToken, "hex"))
@@ -364,6 +369,8 @@ export class IOIStrategy extends EntitlementStrategy {
     }
 
     override async get(userId: string) {
+        return EasyMod.H3_STEAM_ENTITLEMENTS
+
         if (!userAuths.has(userId)) {
             log(LogLevel.ERROR, `No user data found for ${userId}.`)
             return []

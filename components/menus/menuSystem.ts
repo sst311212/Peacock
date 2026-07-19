@@ -672,6 +672,7 @@ menuSystemRouter.use(
     "/images/",
     // @ts-expect-error No type issue is actually here.
     serveStatic("images", { fallthrough: true }),
+    serveStatic(join("EasyMod", "images"), { fallthrough: true }),
     imageFetchingMiddleware,
 )
 
