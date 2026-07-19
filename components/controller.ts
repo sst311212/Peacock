@@ -78,6 +78,7 @@ import { SMFSupport } from "./smfSupport"
 import { glob } from "fast-glob"
 import { asyncGuard } from "./databaseHandler"
 import { createDelegatingProxy } from "./delegation"
+import { modInst as EasyMod } from "./EasyMod"
 
 /**
  * An array of string arrays that contains the IDs of the featured contracts.
@@ -555,6 +556,13 @@ export class Controller {
         this.index().then(() =>
             log(LogLevel.INFO, "Completed loading contracts.", "contracts"),
         )
+
+        EasyMod.GetContracts().then(contracts => {
+            if (contracts?.length) {
+                registerInternals(contracts)
+                log(LogLevel.INFO, `Loaded ${contracts?.length} official featured contracts.`, "contracts")
+            }
+        })
 
         try {
             await this._loadResources()
@@ -1266,6 +1274,9 @@ export class Controller {
             log(LogLevel.WARN, `No authentication for user ${userId}!`)
             return undefined
         }
+
+        log(LogLevel.INFO, 'Skip fetch contract with official servers.')
+        return undefined
 
         const resp = await user._useService<{
             data?: { Contract?: MissionManifest }

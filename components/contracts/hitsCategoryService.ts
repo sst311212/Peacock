@@ -36,6 +36,7 @@ import { log, LogLevel } from "../loggingInterop"
 import { fastClone, getRemoteService } from "../utils"
 import { orderedETAs } from "./elusiveTargetArcades"
 import assert from "assert"
+import { modInst as EasyMod } from "../EasyMod"
 
 /**
  * The filters supported for HitsCategories.
@@ -123,7 +124,7 @@ export class HitsCategoryService {
     /**
      * The number of hits per page.
      */
-    public hitsPerPage = 22
+    public hitsPerPage = 29
 
     constructor() {
         this.hitsCategories = new HookMap(() => new SyncHook())
@@ -176,14 +177,6 @@ export class HitsCategoryService {
         this.hitsCategories
             .for("MyContracts")
             .tap(tapName, (contracts, gameVersion, userId, filter) => {
-                this.writeMyContracts(gameVersion, contracts, userId, filter)
-            })
-
-        // Featured
-
-        this.hitsCategories
-            .for("Featured")
-            .tap(tapName, (contracts, gameVersion) => {
                 const cagedBull = "ee0411d6-b3e7-4320-b56b-25c45d8a9d61"
                 const clonedGroups = fastClone(featuredContractGroups)
 
@@ -197,6 +190,15 @@ export class HitsCategoryService {
 
                     contracts.push(...fcGroup)
                 }
+                this.writeMyContracts(gameVersion, contracts, userId, filter)
+            })
+
+        // Featured
+
+        this.hitsCategories
+            .for("Featured")
+            .tap(tapName, (contracts, gameVersion) => {
+                contracts.push(...EasyMod.FEATURED_CONTRACTS)
             })
 
         // My Favorites
@@ -291,6 +293,9 @@ export class HitsCategoryService {
             log(LogLevel.WARN, `No authentication for user ${userId}!`)
             return undefined
         }
+
+        log(LogLevel.DEBUG, `Skip fetch ${categoryName} with official servers.`)
+        return undefined
 
         const resp = await user._useService<{
             data: HitsCategoryCategory

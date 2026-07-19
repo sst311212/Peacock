@@ -45,6 +45,7 @@ import {
     SteamScpcStrategy,
 } from "./entitlementStrategies"
 import { getFlag } from "./flags"
+import { modInst as EasyMod } from "./EasyMod"
 
 export const JWT_SECRET = PEACOCK_DEV
     ? "secret"
@@ -196,6 +197,7 @@ export async function handleOAuthToken(
     const isHitman3 =
         external_appid === "fghi4567xQOCheZIin0pazB47qGUvZw4" ||
         external_appid === STEAM_NAMESPACE_2021 ||
+        external_appid === EasyMod.STEAM_NAMESPACE_DEMO ||
         external_platform === "apple"
 
     let gameVersion: GameVersion = "h1"
