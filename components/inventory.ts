@@ -377,11 +377,17 @@ export class InventoryService {
                 return false
             }
 
-            if (
-                unlockContainer.Unlockable.Type === "disguise" &&
-                !unlockContainer.Unlockable.Properties.OrderIndex
-            ) {
-                return false
+            // filter out level-specific disguises
+            if (gameVersion === "h3") {
+                if (unlockContainer.Unlockable.SubType === "disguise")
+                    return false
+            } else {
+                if (
+                    unlockContainer.Unlockable.Type === "disguise" &&
+                    !unlockContainer.Unlockable.Properties.OrderIndex
+                ) {
+                    return false
+                }
             }
 
             if (gameVersion === "h1") {
