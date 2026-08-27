@@ -333,6 +333,8 @@ export function scenePathToRpAsset(
         case "assembly:/_pro/scenes/missions/opulent/mission_stingray/scene_stingray_basic.entity":
         case "assembly:/_pro/scenes/missions/opulent/mission_stingray/scene_stingray_arcticthyme.entity":
             return ["havenlastresort", "The Last Resort", "Haven"]
+        case "assembly:/_pro/scenes/missions/opulent/scene_greentini.entity":
+            return ["elusivegreentini", "The Herbalist", "Haven"]
 
         // miami
         case "assembly:/_pro/scenes/missions/miami/scene_et_sambuca.entity":

@@ -611,6 +611,7 @@ export const missionsInLocation = {
                 "b1fb40d7-c013-4c9f-bb8a-8782e980b11a",
                 "55cd7c79-f6dd-4d58-86e1-d52863488077",
             ],
+            LOCATION_OPULENT_STINGRAY: ["6b42daeb-9878-4b44-a0b9-e09377208ad5"],
             LOCATION_ANCESTRAL_BULLDOG: [
                 "bfb56fe6-06db-440a-aafe-42eeeb223fa1",
                 "80cf04de-8e0b-4f38-b094-600753e2ac24",
